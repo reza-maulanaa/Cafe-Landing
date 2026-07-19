@@ -10,11 +10,11 @@ const navLinks = [
 
 const Header = () => {
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-amber-900/10 bg-background/80 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+    <header className="sticky top-0 z-50 w-full border-b backdrop-blur bg-gray-950">
       <nav className="mx-auto flex max-w-6xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
         <Link
           href="#beranda"
-          className="flex items-center gap-2 text-lg font-semibold tracking-tight text-amber-900"
+          className="flex items-center gap-2 text-lg font-semibold tracking-tight text-gray-950"
         >
           <Image
             src="/favicon.ico"
@@ -33,7 +33,7 @@ const Header = () => {
             <li key={link.href}>
               <Link
                 href={link.href}
-                className="transition-colors hover:text-amber-900"
+                className="transition-colors hover:text-gray-950"
               >
                 {link.label}
               </Link>
@@ -43,7 +43,7 @@ const Header = () => {
 
         <Link
           href="#kontak"
-          className="rounded-full bg-amber-900 px-4 py-2 text-sm font-semibold text-white transition-colors hover:bg-amber-800"
+          className="rounded-full px-4 py-2 text-sm font-semibold bg-gray-50 text-shadow-gray-50 transition-colors text-gray-950"
         >
           Pesan Sekarang
         </Link>
