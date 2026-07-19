@@ -13,9 +13,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Kopi Dari Hati — Teman Baik untuk Hari yang Tenang",
+  title: "Cafe Jatibarang — Teman Baik untuk Hari yang Tenang",
   description:
-    "Landing page Kopi Dari Hati: menu andalan, jam operasional, fasilitas, dan rute lokasi kedai kopi lokal.",
+    "Landing page Cafe Jatibarang: menu andalan, jam operasional, fasilitas, dan rute lokasi kedai kopi lokal.",
 };
 
 export default function RootLayout({

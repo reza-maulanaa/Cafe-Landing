@@ -15,7 +15,7 @@ const AboutUs = () => {
             Dari biji yang sabar, jadi cangkir yang hangat.
           </h2>
           <p className="mt-5 text-base leading-relaxed text-espresso/70 sm:text-lg">
-            Kopi Dari Hati lahir dari kepercayaan bahwa secangkir kopi bukan
+            Cafe Jatibarang lahir dari kepercayaan bahwa secangkir kopi bukan
             sekadar minuman, melainkan ruang untuk melambat. Kami memanggang
             biji Arabika pilihan dalam jumlah kecil agar setiap racikan selalu
             segar dan jujur rasanya.
@@ -23,14 +23,15 @@ const AboutUs = () => {
           <p className="mt-4 text-base leading-relaxed text-espresso/70 sm:text-lg">
             Di sini kamu boleh datang sendirian untuk bekerja, atau bersama
             kawan untuk sekadar mengobrol. Ruang kami dibuat senyaman rumah —
-            dengan Wi-Fi yang stabil, colokan yang cukup, dan senyum yang gratis.
+            dengan Wi-Fi yang stabil, colokan yang cukup, dan senyum yang
+            gratis.
           </p>
         </div>
 
         <div className="order-1 overflow-hidden rounded-3xl border border-espresso/10 shadow-sm lg:order-2">
           <Image
-            src="/images/about.svg"
-            alt="Suasana interior hangat kedai Kopi Dari Hati"
+            src="/images/suasana.jpeg"
+            alt="Suasana interior hangat kedai Cafe Jatibarang"
             width={800}
             height={600}
             loading="lazy"

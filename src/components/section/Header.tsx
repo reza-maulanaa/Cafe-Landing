@@ -32,7 +32,7 @@ const Header = () => {
             className="h-7 w-7 rounded-full"
             aria-hidden="true"
           />
-          Kopi Dari Hati
+          Cafe Jatibarang
         </Link>
 
         <ul className="hidden items-center gap-8 text-sm font-medium text-mocha md:flex">
