@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-label="Suasana interior kedai kopi Cafe Jatibarang">
+  <defs>
+    <linearGradient id="wall" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#6f4e37"/>
+      <stop offset="1" stop-color="#4a2f1c"/>
+    </linearGradient>
+    <linearGradient id="floor" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3a2516"/>
+      <stop offset="1" stop-color="#2b2118"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.4" r="0.6">
+      <stop offset="0" stop-color="#faf4ec" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#faf4ec" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#wall)"/>
+
+  <!-- warm window light -->
+  <rect x="120" y="120" width="420" height="460" rx="14" fill="#c8a27c" opacity="0.35"/>
+  <rect x="120" y="120" width="420" height="460" rx="14" fill="none" stroke="#2b2118" stroke-width="10" opacity="0.4"/>
+  <line x1="330" y1="120" x2="330" y2="580" stroke="#2b2118" stroke-width="8" opacity="0.4"/>
+  <line x1="120" y1="350" x2="540" y2="350" stroke="#2b2118" stroke-width="8" opacity="0.4"/>
+
+  <!-- soft glow -->
+  <circle cx="820" cy="320" r="300" fill="url(#glow)"/>
+
+  <!-- pendant lamps -->
+  <g stroke="#2b2118" stroke-width="6" opacity="0.7">
+    <line x1="980" y1="0" x2="980" y2="150"/>
+    <line x1="1180" y1="0" x2="1180" y2="200"/>
+    <line x1="1380" y1="0" x2="1380" y2="120"/>
+  </g>
+  <g fill="#b08968">
+    <path d="M950 150 h60 l-12 36 h-36 z"/>
+    <path d="M1150 200 h60 l-12 36 h-36 z"/>
+    <path d="M1350 120 h60 l-12 36 h-36 z"/>
+  </g>
+
+  <!-- floor -->
+  <rect x="0" y="640" width="1600" height="260" fill="url(#floor)"/>
+  <g stroke="#2b2118" stroke-width="3" opacity="0.25">
+    <line x1="0" y1="720" x2="1600" y2="720"/>
+    <line x1="0" y1="800" x2="1600" y2="800"/>
+  </g>
+
+  <!-- counter on the right -->
+  <rect x="1040" y="520" width="520" height="160" rx="10" fill="#4a2f1c"/>
+  <rect x="1040" y="500" width="520" height="26" rx="8" fill="#6f4e37"/>
+
+  <!-- coffee cup on counter -->
+  <g>
+    <ellipse cx="1280" cy="498" rx="34" ry="9" fill="#2b2118" opacity="0.5"/>
+    <path d="M1252 470 h56 v18 a28 28 0 0 1 -56 0 z" fill="#faf4ec"/>
+    <path d="M1308 474 q22 4 18 24 q-3 14 -18 14" fill="none" stroke="#faf4ec" stroke-width="6"/>
+    <rect x="1274" y="448" width="3" height="22" fill="#efe3d3" opacity="0.7" transform="rotate(8 1275 459)"/>
+    <rect x="1284" y="446" width="3" height="24" fill="#efe3d3" opacity="0.6"/>
+  </g>
+
+  <!-- plant -->
+  <g>
+    <rect x="150" y="560" width="70" height="90" rx="8" fill="#4a2f1c"/>
+    <path d="M185 560 q-40 -70 -10 -150 q30 60 10 150 z" fill="#6f4e37"/>
+    <path d="M185 560 q40 -60 70 -120 q-50 40 -70 120 z" fill="#7a5640"/>
+  </g>
+</svg>
