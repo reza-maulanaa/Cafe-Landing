@@ -1,7 +1,7 @@
 # Product Requirements Document (PRD)
 
 ## 1. Project Overview
-* **Project Name:** Kopi dari hati
+* **Project Name:** Coffe Shop Jatibarang
 * **Author:** [Reza] (Web Developer)
 * **Status:** Approved / Siap Eksekusi Sekuensial
 * **Date:** Juli 2026
