@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600" role="img" aria-label="Suasana interior kedai kopi">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#efe3d3"/>
+      <stop offset="1" stop-color="#c8a27c"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#bg)"/>
+  <circle cx="620" cy="160" r="90" fill="#b08968" opacity="0.35"/>
+  <rect x="120" y="360" width="560" height="160" rx="16" fill="#6f4e37" opacity="0.55"/>
+  <rect x="150" y="300" width="500" height="70" rx="12" fill="#4a2f1c" opacity="0.45"/>
+  <circle cx="400" cy="220" r="46" fill="#2b2118" opacity="0.65"/>
+  <path d="M362 220 h76 v14 a38 38 0 0 1 -76 0 z" fill="#faf4ec" opacity="0.85"/>
+  <text x="400" y="540" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" fill="#2b2118" opacity="0.8">Suasana Kedai</text>
+</svg>
