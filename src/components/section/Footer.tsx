@@ -36,11 +36,17 @@ const socials = [
   },
 ];
 
+import SectionReveal from "@/components/Ui/SectionReveal";
+
 const Footer = () => {
   return (
-    <footer id="kontak" className="bg-espresso text-cream">
+    <SectionReveal
+      as="footer"
+      id="kontak"
+      className="bg-espresso text-cream"
+    >
       <div className="mx-auto grid max-w-6xl gap-10 px-4 py-14 sm:px-6 lg:grid-cols-3 lg:gap-8 lg:px-8">
-        <div>
+        <div data-reveal>
           <p className="text-lg font-semibold">Cafe Jatibarang</p>
           <p className="mt-3 max-w-xs text-sm leading-relaxed text-cream/70">
             Teman baik untuk hari yang tenang. Mampir, pesan, dan nikmati
@@ -64,7 +70,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div>
+        <div data-reveal>
           <p className="text-sm font-semibold uppercase tracking-widest text-cream/60">
             Kunjungi
           </p>
@@ -84,7 +90,7 @@ const Footer = () => {
           </ul>
         </div>
 
-        <div>
+        <div data-reveal>
           <p className="text-sm font-semibold uppercase tracking-widest text-cream/60">
             Kontak Cepat
           </p>
@@ -102,10 +108,13 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="border-t border-cream/10 py-6 text-center text-xs text-cream/50">
+      <div
+        data-reveal
+        className="border-t border-cream/10 py-6 text-center text-xs text-cream/50"
+      >
         © {new Date().getFullYear()} Cafe Jatibarang. Dibuat dengan hati.
       </div>
-    </footer>
+    </SectionReveal>
   );
 };
 

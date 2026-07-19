@@ -1,20 +1,30 @@
 import { menus, formatPrice } from "@/data/menus";
+import SectionReveal from "@/components/Ui/SectionReveal";
 
 const Menu = () => {
   return (
-    <section
+    <SectionReveal
       id="menu"
       className="border-b border-espresso/10 bg-sand/40 py-16 sm:py-20 lg:py-24"
     >
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
-          <span className="text-xs font-medium uppercase tracking-widest text-mocha">
+          <span
+            data-reveal
+            className="text-xs font-medium uppercase tracking-widest text-mocha"
+          >
             Menu Andalan
           </span>
-          <h2 className="mt-3 text-3xl font-bold tracking-tight text-espresso sm:text-4xl">
+          <h2
+            data-reveal
+            className="mt-3 text-3xl font-bold tracking-tight text-espresso sm:text-4xl"
+          >
             Yang paling sering dipesan
           </h2>
-          <p className="mt-4 text-base leading-relaxed text-espresso/70 sm:text-lg">
+          <p
+            data-reveal
+            className="mt-4 text-base leading-relaxed text-espresso/70 sm:text-lg"
+          >
             Tiga kategori favorit pelanggan, dari kopi racikan sendiri hingga
             camilan pendamping.
           </p>
@@ -23,6 +33,7 @@ const Menu = () => {
         <div className="mt-12 grid gap-8 md:grid-cols-3">
           {menus.map((group) => (
             <div
+              data-reveal
               key={group.category}
               className="flex flex-col rounded-3xl border border-espresso/10 bg-cream p-6 shadow-sm"
             >
@@ -48,7 +59,7 @@ const Menu = () => {
           ))}
         </div>
       </div>
-    </section>
+    </SectionReveal>
   );
 };
 

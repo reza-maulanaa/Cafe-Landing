@@ -4,14 +4,22 @@ import { useEffect, useRef } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 
 const MAPS_URL =
   "https://www.google.com/maps/dir/?api=1&destination=-6.200000,106.816666";
 
 const Hero = () => {
   const contentRef = useRef<HTMLDivElement>(null);
+  const heroRef = useRef<HTMLElement>(null);
 
   useEffect(() => {
+    const reduce = window.matchMedia(
+      "(prefers-reduced-motion: reduce)",
+    ).matches;
+
     const ctx = gsap.context(() => {
       gsap.from("[data-hero-item]", {
         y: 40,
@@ -21,6 +29,19 @@ const Hero = () => {
         stagger: 0.12,
         delay: 0.15,
       });
+
+      if (!reduce) {
+        gsap.to("[data-hero-bg]", {
+          yPercent: 12,
+          ease: "none",
+          scrollTrigger: {
+            trigger: heroRef.current,
+            start: "top top",
+            end: "bottom top",
+            scrub: true,
+          },
+        });
+      }
     }, contentRef);
 
     return () => ctx.revert();
@@ -29,6 +50,7 @@ const Hero = () => {
   return (
     <section
       id="beranda"
+      ref={heroRef}
       className="relative flex min-h-[92svh] items-start overflow-hidden pt-10 sm:items-center sm:min-h-[92vh] sm:pt-0"
     >
       <Image
@@ -37,7 +59,8 @@ const Hero = () => {
         fill
         priority
         sizes="100vw"
-        className="-z-10 object-cover"
+        data-hero-bg
+        className="-z-10 scale-110 object-cover"
       />
       <div className="-z-10 absolute inset-0 bg-gradient-to-r from-espresso/85 via-espresso/55 to-espresso/20" />
       <div className="-z-10 absolute inset-0 bg-gradient-to-t from-espresso/80 via-transparent to-espresso/30" />

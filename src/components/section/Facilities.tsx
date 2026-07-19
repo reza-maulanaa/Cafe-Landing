@@ -1,4 +1,5 @@
 import type { ReactNode } from "react";
+import SectionReveal from "@/components/Ui/SectionReveal";
 
 interface Facility {
   label: string;
@@ -77,19 +78,28 @@ const hours: { day: string; time: string }[] = [
 
 const Facilities = () => {
   return (
-    <section
+    <SectionReveal
       id="fasilitas"
       className="border-b border-espresso/10 bg-cream py-16 sm:py-20 lg:py-24"
     >
       <div className="mx-auto grid max-w-6xl gap-12 px-4 sm:px-6 lg:grid-cols-2 lg:gap-16 lg:px-8">
         <div>
-          <span className="text-xs font-medium uppercase tracking-widest text-mocha">
+          <span
+            data-reveal
+            className="text-xs font-medium uppercase tracking-widest text-mocha"
+          >
             Jam Operasional
           </span>
-          <h2 className="mt-3 text-3xl font-bold tracking-tight text-espresso sm:text-4xl">
+          <h2
+            data-reveal
+            className="mt-3 text-3xl font-bold tracking-tight text-espresso sm:text-4xl"
+          >
             Kapan kami buka?
           </h2>
-          <dl className="mt-6 divide-y divide-espresso/10 rounded-2xl border border-espresso/10 bg-sand/40 px-5">
+          <dl
+            data-reveal
+            className="mt-6 divide-y divide-espresso/10 rounded-2xl border border-espresso/10 bg-sand/40 px-5"
+          >
             {hours.map((row) => (
               <div
                 key={row.day}
@@ -105,15 +115,22 @@ const Facilities = () => {
         </div>
 
         <div>
-          <span className="text-xs font-medium uppercase tracking-widest text-mocha">
+          <span
+            data-reveal
+            className="text-xs font-medium uppercase tracking-widest text-mocha"
+          >
             Fasilitas
           </span>
-          <h2 className="mt-3 text-3xl font-bold tracking-tight text-espresso sm:text-4xl">
+          <h2
+            data-reveal
+            className="mt-3 text-3xl font-bold tracking-tight text-espresso sm:text-4xl"
+          >
             Nyaman untuk nongkrong
           </h2>
-          <ul className="mt-6 grid grid-cols-2 gap-4">
+          <ul data-reveal className="mt-6 grid grid-cols-2 gap-4">
             {facilities.map((item) => (
               <li
+                data-reveal
                 key={item.label}
                 className="flex items-center gap-3 rounded-2xl border border-espresso/10 bg-cream p-4"
               >
@@ -137,7 +154,7 @@ const Facilities = () => {
           </ul>
         </div>
       </div>
-    </section>
+    </SectionReveal>
   );
 };
 
